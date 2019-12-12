@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -10,16 +9,7 @@ html {
 
 body {
   margin: 0;
-}
-
-img {
-  width: 100%;
-}
-
-.banner {
-  position: relative;
-  max-height: 500px;
-  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
 }
 
 .img-flex {
@@ -27,28 +17,58 @@ img {
   width: 100%;
 }
 
-.content {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 25px;
-  width: 100%;
-  max-width: 50em;
+.banner {
   overflow: hidden;
-  padding: 0 1.5rem;
+  max-height: 500px;
+  position: relative;
 }
 
 h2 {
-  display: inline;
-  color: #fff;
-  font-size: 4rem;
-  background-color: rgba(0, 0, 0, .5);
-  padding: 0;
   line-height: 1.4;
+  font-size: 4rem;
+  color: #fff;
 }
 
-p {
+div {
+  margin: 0;
+}
+
+.max-width {
+  max-width: 50em;
+  width: 100%;
+}
+
+.banner-title {
+  width: 100%;
+  transform: translateX(-34%);
+  left: 38%;
+  position: absolute;
+  bottom: 8.1rem;
+}
+
+.banner-title span {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.banner-text {
+  margin: 0;
   font-size: 2rem;
   font-style: italic;
-  margin: 1rem 0 0;
+  position: absolute;
+  bottom: 1.4rem;
+  left: 1.5rem;
+}
+
+@media only screen and (min-width: 60em) {
+
+.banner-title {
+  bottom: 5rem;
+  padding: 0 20rem;
+}
+
+.banner-text {
+  padding: 0 20rem;
+  bottom: 1.5rem;
+}
+
 }
